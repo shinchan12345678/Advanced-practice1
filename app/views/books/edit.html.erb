@@ -1,0 +1,12 @@
+<div class="content">
+  <h1>Editing Book</h1>
+
+
+  <%= render 'books/form', book: @book %>
+
+  <div class="box">
+    <%= link_to 'Show', @book, class: "show_#{@book.id}" %> |
+    <%= link_to 'Back', books_path, class: "back" %>
+  </div>
+
+</div>
